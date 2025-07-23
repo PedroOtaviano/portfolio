@@ -1,13 +1,17 @@
 import Titulo from "../../components/Título";
-import Paragrafo from "../../components/Paragrafo";
 import { P } from "../../components/Paragrafo/styles";
+import { GithubSecao } from "./styles";
 
 const Sobre = () => (
   <section>
     <Titulo fontSize={16}>Sobre mim</Titulo>
-    <P tipo = "secundario">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quisquam itaque dicta esse enim, eius repudiandae delectus minus placeat, alias aspernatur sint totam nesciunt voluptates officiis commodi temporibus facere. Fugit?
+    <P tipo = "principal">
+      Me chamo Pedro, sou formado em Engenharia Elétrica pela Georgian College no Canadá. Engenheiro full-stack a procura de desafios e idéias que possam ajudar no ambiente de desenvolvimento.
     </P>
+    <GithubSecao>
+      <img  src="https://github-readme-stats.vercel.app/api?username=pedrootaviano&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+      <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrootaviano&layout=compact&langs_count=7&theme=dracula"/>
+    </GithubSecao>
   </section>
 )
 
